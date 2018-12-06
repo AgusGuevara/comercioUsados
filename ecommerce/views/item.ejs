@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Ecommerce</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header><br /><br />
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" style="height: 150px;" src="<%=imagen%>" alt="Imagen no disponible">
+            <div class="card-body">
+                <h5 class="card-title"><%= nombre %></h5>
+                <h5 class="card-title">precio: $<%= precio %></h5>
+                <h5 class="card-title">descripcion: <%= descripcion %></h5>            
+            <a href="/delete/<%=id%>" class="btn btn-primary">
+                <button class="btn-primary">
+                    eliminar
+                </button>
+            </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
